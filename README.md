@@ -43,15 +43,9 @@
 - postgresql
 - prisma
 
----
+## GraphQL Setup From Zero:
 
----
-
----
-
-# Start From Zero: 
-[all video's instruction here ](https://web.programming-hero.com/level2-batch-1/video/level2-batch-1-68-2-initializing-the-project-with-apollo-server)
-
+#### Part : 1 : Basic setup without GpQL Code environment
 
 - yarn init -y
 - https://www.apollographql.com/docs/apollo-server/getting-started (This only for new and basic project which provided all GraphQL default Setup, But have some issue for tsc or TypeScript and nodemon configuration, So if we want to manual setup by self follow the bellow link:- of step-2-install-dependencies )
@@ -65,25 +59,12 @@
   - Example Code: `const checkGql: string = "Text check for GraphQL";  console.log(checkGql);`
   - npx ts-node-dev src/index.ts (type in terminal)
 - Now edit package json file `"scripts":{ "dev": "nodemon --watch './**/*.ts' --exec ts-node src/index.ts " },` type this code before dependencies
-- Finally Type `yarn dev` in terminal
+- Finally Type `yarn dev` in terminal ---now finish basic setup
 
---- now finish basic setup ---
+#### Part : 2 : Basic setup with GpQL Code environment
 
-- now start GpQL code setup in to src/index.ts from website: https://www.apollographql.com/docs/apollo-server/getting-started#step-3-define-your-graphql-schema
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Part: 1 + [ All video's instruction here For : GraphQL Initial Project Setup With Apollo Server ](https://web.programming-hero.com/level2-batch-1/video/level2-batch-1-68-2-initializing-the-project-with-apollo-server)
+- Advance Setup And DB Setup
+    - npx tsc --init
+    - yarn add prisma
+    - npx prisma init

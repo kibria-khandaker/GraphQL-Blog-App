@@ -4,12 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --watch './**/*.ts' --exec ts-node src/index.ts"
+    "dev": "nodemon --watch './**/*.ts' --exec ts-node src/index.ts",
+    "mig": "npx prisma migrate dev"
   },
   "dependencies": {
     "@apollo/server": "^4.10.0",
+    "@prisma/client": "^5.10.2",
     "@types/node": "^20.11.20",
     "graphql": "^16.8.1",
+    "prisma": "^5.10.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.3.3"
   },
