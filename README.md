@@ -1,4 +1,4 @@
-# GraphQL-Blog-App:
+# GraphQL Blog App:
 
 ## requirement
 
