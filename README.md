@@ -68,3 +68,10 @@
     - npx tsc --init
     - yarn add prisma
     - npx prisma init
+
+
+```bash
+ 
+ yarn dev
+
+```
