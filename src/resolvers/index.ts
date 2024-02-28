@@ -1,5 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
+import bcrypt from "bcrypt";
 
 interface userInfo {
   name: string;
@@ -16,9 +17,14 @@ export const resolvers = {
 
   Mutation: {
     signup: async (parent: any, args: userInfo, context: any) => {
+      const hashedPassword = await bcrypt.hash(args.password, 12)
       //   console.log(args);
       return await prisma.user.create({
-        data: args,
+        data: {
+          name: args.name,
+          email: args.email,
+          password: hashedPassword
+        },
       });
     },
   },
